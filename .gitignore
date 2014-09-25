@@ -1,0 +1,4 @@
+.sass-cache
+
+config/*.yml
+public/assets
