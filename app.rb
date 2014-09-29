@@ -7,7 +7,13 @@ class App < Sinatra::Application
     set :root, File.dirname(__FILE__)
     set :views, File.join(settings.root, 'app/views')
     set :assets_precompile, %w( application.js application.css )
-    set :assets_prefix, %w( app/assets )
+    set :assets_prefix, %w( vender/assets app/assets )
+  end
+
+  configure :development do
+    Sprockets::Helpers.configure do |config|
+      config.debug = true if ENV['RACK_ENV'] == 'development'
+    end
   end
 
   register Sinatra::AssetPipeline
