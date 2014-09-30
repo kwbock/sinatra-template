@@ -2,3 +2,4 @@
 
 config/*.yml
 public/assets
+node_modules

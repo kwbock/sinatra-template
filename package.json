@@ -1,0 +1,10 @@
+{
+  "name": "sinatra-template",
+  "version": "0.0.0",
+  "description": "A base application template for Sinatra apps",
+  "author": "Kyle Bock",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}
